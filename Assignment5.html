@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.Write a program and display all flexbox properties?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff69b4, #9370db);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 20px;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #ffa500, #ff8c00);
+            border: 2px solid #000;
+            padding: 0px;
+
+        }
+
+
+
+        .mini-box {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(to bottom, #4169e1, #0000cd);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .bottom-container {
+            margin-top:200px ;
+            display: flex;
+            /* border:1px solid black; */
+            /* flex-direction: row; */
+            justify-content: space-around;
+            gap: 20px;
+            padding: 10px;
+            /* position: relative; */
+        }
+
+
+
+
+
+        .mini-containertop1{
+           display: flex;
+           column-gap: 0.1rex;
+           flex-direction: row;
+           justify-content: left;
+
+        }
+        .mini-containertop2{
+           display: flex;
+           column-gap: 0.1rex;
+           flex-direction: row;
+           justify-content: center;
+
+        }
+        .mini-containertop3{
+            display: flex;
+            flex-direction: row;
+            column-gap: 0.1rex;
+            justify-self: right;
+        }
+        .mini-containertop4{
+            display: flex;
+            justify-content: space-around;
+        }
+        .mini-containertop5{
+            display: flex;
+            margin: 0;
+            justify-content: space-between;
+        }
+        .mini-containertop6{
+            display: flex;
+            margin: 0;
+            justify-content: space-around;
+        }
+        .mini-containertop7{
+           display: flex;
+           column-gap: 0.1rex;
+           flex-direction: row;
+           justify-content: left;
+
+        }
+         .mini-container1{
+            display: flex;
+            align-items: center;
+            justify-content:start;
+            column-gap: 0.1rex;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #ffa500, #ff8c00);
+            border: 2px solid #000;
+            padding: 0px;
+
+
+        }
+        .mini-containerbottom1{
+            display: flex;
+            justify-content:start;
+            align-items: end;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #ffa500, #ff8c00);
+            border: 2px solid #000;
+            padding: 0px;
+        }
+        .mini-container2{
+            display: flex;
+            /* margin-top: 35%; */
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #ffa500, #ff8c00);
+            border: 2px solid #000;
+            padding: 0px;
+        }
+        .mini-containerbottom2{
+            display: flex;
+            justify-content:center;
+            align-items: end;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #ffa500, #ff8c00);
+            border: 2px solid #000;
+            padding: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Top row of boxes -->
+    <div class="container">
+        <div class="box">
+            <div class="mini-containertop1">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="mini-containertop2">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="mini-containertop3">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="mini-containertop4">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="mini-containertop5">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="mini-containertop6">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="mini-containertop7">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom row of boxes -->
+    <div class="bottom-container">
+        <!-- <div class="box"> -->
+            <div class="mini-container1">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            </div>
+            <!-- </div> -->
+        <!-- <div class="box"> -->
+            <div class="mini-containerbottom1">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            <!-- </div> -->
+             </div>
+        <!-- <div class="box"> -->
+            <div class="mini-container2">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            <!-- </div> -->
+            </div>
+        <!-- <div class="box"> -->
+            <div class="mini-containerbottom2">
+                <div class="mini-box">Box1</div>
+                <div class="mini-box">Box2</div>
+                <div class="mini-box">Box3</div>
+            <!-- </div> -->
+            </div>
+    </div>
+</body>
+</html>
